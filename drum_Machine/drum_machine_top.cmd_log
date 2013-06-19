@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_machine2/drum_Machine/drum_machine_top.xst" -ofn "C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_machine2/drum_Machine/drum_machine_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 "drum_machine_top.ngc" drum_machine_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o drum_machine_top_map.ncd drum_machine_top.ngd drum_machine_top.pcf 
+par -w -intstyle ise -ol high -mt 4 drum_machine_top_map.ncd drum_machine_top.ncd drum_machine_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml drum_machine_top.twx drum_machine_top.ncd -o drum_machine_top.twr drum_machine_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f drum_machine_top.ut drum_machine_top.ncd 

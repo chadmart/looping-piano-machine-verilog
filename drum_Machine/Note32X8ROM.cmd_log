@@ -1,0 +1,6 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.v} -lang verilog -prj drum_Machine -o Note32X8ROM.spl -module Note32X8ROM -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Note32X8ROM.spl {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.v} -lang verilog -prj drum_Machine -o Note32X8ROM.spl -module Note32X8ROM -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Note32X8ROM.spl {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.v} -lang verilog -prj drum_Machine -o Note32X8ROM.spl -module Note32X8ROM -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Note32X8ROM.spl {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note32X8ROM.sym} 

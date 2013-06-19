@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note64X16ROM.v} -lang verilog -prj drum_Machine -o Note64X16ROM.spl -module Note64X16ROM -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Note64X16ROM.spl {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note64X16ROM.sym} 

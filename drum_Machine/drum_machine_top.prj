@@ -1,0 +1,7 @@
+verilog work "Note64X16ROM.v"
+verilog work "hvsync_generator.v"
+verilog work "vga_demo.v"
+verilog work "Note_CLK_GEN2.vf"
+verilog work "ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v"
+verilog work "drum_machine_SM.v"
+verilog work "drum_machine_top.v"

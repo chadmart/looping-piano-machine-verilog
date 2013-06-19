@@ -1,0 +1,164 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Note_CLK_GEN2.vf
+// /___/   /\     Timestamp : 05/26/2013 19:39:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_machine2/drum_Machine/Note_CLK_GEN2.vf" -w "C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_machine2/drum_Machine/Note_CLK_GEN2.sch"
+//Design Name: Note_CLK_GEN2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB16CE_HXILINX_Note_CLK_GEN2(CEO, Q, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 16'b0000_0000_0000_0000;
+	else if (CE)
+	  Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Note_CLK_GEN2(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module COMP16_HXILINX_Note_CLK_GEN2 (EQ, A, B);
+    
+
+   output EQ;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign EQ = (A == B) ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module Note_CLK_GEN2(ADDR, 
+                     CLK_50MHZ, 
+                     RESET, 
+                     sys_clk, 
+                     NOTE_CLK);
+
+    input [5:0] ADDR;
+    input CLK_50MHZ;
+    input RESET;
+    input sys_clk;
+   output NOTE_CLK;
+   
+   wire CLK_50KHZ;
+   wire tie0;
+   wire tie1;
+   wire [15:0] XLXN_1;
+   wire XLXN_5;
+   wire [15:0] XLXN_9;
+   wire XLXN_10;
+   wire XLXN_25;
+   wire [15:0] XLXN_30;
+   wire XLXN_38;
+   wire XLXN_39;
+   
+   Note64X16ROM  XLXI_1 (.I(ADDR[5:0]), 
+                        .DOUT(XLXN_1[15:0]));
+   (* HU_SET = "XLXI_2_0" *) 
+   COMP16_HXILINX_Note_CLK_GEN2  XLXI_2 (.A(XLXN_9[15:0]), 
+                                        .B(XLXN_1[15:0]), 
+                                        .EQ(XLXN_39));
+   (* HU_SET = "XLXI_4_1" *) 
+   CB16CE_HXILINX_Note_CLK_GEN2  XLXI_4 (.C(CLK_50KHZ), 
+                                        .CE(XLXN_10), 
+                                        .CLR(XLXN_38), 
+                                        .CEO(), 
+                                        .Q(XLXN_9[15:0]), 
+                                        .TC());
+   VCC  XLXI_5 (.P(XLXN_10));
+   VCC  XLXI_6 (.P(XLXN_5));
+   (* HU_SET = "XLXI_10_2" *) 
+   FJKC_HXILINX_Note_CLK_GEN2  XLXI_10 (.C(XLXN_39), 
+                                       .CLR(RESET), 
+                                       .J(XLXN_5), 
+                                       .K(XLXN_5), 
+                                       .Q(NOTE_CLK));
+   (* HU_SET = "XLXI_12_3" *) 
+   CB16CE_HXILINX_Note_CLK_GEN2  XLXI_12 (.C(CLK_50MHZ), 
+                                         .CE(XLXN_25), 
+                                         .CLR(CLK_50KHZ), 
+                                         .CEO(), 
+                                         .Q(XLXN_30[15:0]), 
+                                         .TC());
+   (* HU_SET = "XLXI_13_4" *) 
+   COMP16_HXILINX_Note_CLK_GEN2  XLXI_13 (.A(XLXN_30[15:0]), 
+                                         .B({tie0, tie0, tie0, tie0, tie0, 
+         tie0, tie0, tie1, tie1, tie1, tie1, tie1, tie0, tie1, tie0, tie0}), 
+                                         .EQ(CLK_50KHZ));
+   VCC  XLXI_14 (.P(XLXN_25));
+   VCC  XLXI_16 (.P(tie1));
+   GND  XLXI_17 (.G(tie0));
+   OR2  XLXI_18 (.I0(XLXN_39), 
+                .I1(sys_clk), 
+                .O(XLXN_38));
+endmodule

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 230: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">1</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 231: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">1</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 143: Assignment to <arg fmt="%s" index="1">sys_clk2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 143: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 160: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 173: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 178: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 191: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 196: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 228: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_SM.v" Line 72: Assignment to <arg fmt="%s" index="1">q_I</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\vga_demo.v" Line 34: Assignment to <arg fmt="%s" index="1">q_I</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\hvsync_generator.v" Line 34: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\hvsync_generator.v" Line 44: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\Note_CLK_GEN2.vf" Line 42: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 317: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 319: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">DPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnC</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">MCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnC</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">CCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnC</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">DPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">MCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">CCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">165</arg>: Output port &lt;<arg fmt="%s" index="3">DPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">165</arg>: Output port &lt;<arg fmt="%s" index="3">MCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">165</arg>: Output port &lt;<arg fmt="%s" index="3">CCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_Btn1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">169</arg>: Output port &lt;<arg fmt="%s" index="3">DPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">169</arg>: Output port &lt;<arg fmt="%s" index="3">MCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v</arg>&quot; line <arg fmt="%s" index="2">169</arg>: Output port &lt;<arg fmt="%s" index="3">CCEN</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ee201_debouncer_BtnU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ClkPort</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf</arg>&quot; line <arg fmt="%s" index="2">147</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_12</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf</arg>&quot; line <arg fmt="%s" index="2">147</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_12</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_DOUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">drum_machine_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

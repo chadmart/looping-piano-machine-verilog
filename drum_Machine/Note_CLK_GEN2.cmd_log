@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Note_CLK_GEN2_drc.vf -w {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note_CLK_GEN2.sch} 
+sch2hdl -intstyle ise -family spartan6 -verilog Note_CLK_GEN2.vf -w {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note_CLK_GEN2.sch} 
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note_CLK_GEN2.sch} Note_CLK_GEN2.tfi 
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w {C:/Users/user/Dropbox/School/EE-201L intro to digital circuits/Drum_Machine/drum_Machine/Note_CLK_GEN2.sch} Note_CLK_GEN2.tfi 

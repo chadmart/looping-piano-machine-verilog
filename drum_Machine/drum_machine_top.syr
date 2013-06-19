@@ -1,0 +1,1114 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: drum_machine_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "drum_machine_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "drum_machine_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : drum_machine_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\Note64X16ROM.v\" into library work
+Parsing module <Note64X16ROM>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\hvsync_generator.v\" into library work
+Parsing module <hvsync_generator>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\vga_demo.v\" into library work
+Parsing module <vga_demo>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\Note_CLK_GEN2.vf\" into library work
+Parsing module <CB16CE_HXILINX_Note_CLK_GEN2>.
+Parsing module <FJKC_HXILINX_Note_CLK_GEN2>.
+Parsing module <COMP16_HXILINX_Note_CLK_GEN2>.
+Parsing module <Note_CLK_GEN2>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v\" into library work
+Parsing module <ee201_debouncer>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_SM.v\" into library work
+Parsing module <drum_machine_SM>.
+Analyzing Verilog file \"C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v\" into library work
+Parsing module <drum_machine_top>.
+WARNING:HDLCompiler:568 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 230: Constant value is truncated to fit in <1> bits.
+WARNING:HDLCompiler:568 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 231: Constant value is truncated to fit in <1> bits.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <drum_machine_top>.
+
+Elaborating module <BUFGP>.
+WARNING:HDLCompiler:1127 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 143: Assignment to sys_clk2 ignored, since the identifier is never used
+
+Elaborating module <ee201_debouncer(N_dc=28)>.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 143: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 160: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 173: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 178: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 191: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 196: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v" Line 228: Result of 29-bit expression is truncated to fit in 28-bit target.
+
+Elaborating module <drum_machine_SM>.
+WARNING:HDLCompiler:1127 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_SM.v" Line 72: Assignment to q_I ignored, since the identifier is never used
+
+Elaborating module <vga_demo>.
+WARNING:HDLCompiler:1127 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\vga_demo.v" Line 34: Assignment to q_I ignored, since the identifier is never used
+
+Elaborating module <hvsync_generator>.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\hvsync_generator.v" Line 34: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\hvsync_generator.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <Note_CLK_GEN2>.
+
+Elaborating module <Note64X16ROM>.
+
+Elaborating module <COMP16_HXILINX_Note_CLK_GEN2>.
+
+Elaborating module <CB16CE_HXILINX_Note_CLK_GEN2>.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\Note_CLK_GEN2.vf" Line 42: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <VCC>.
+
+Elaborating module <FJKC_HXILINX_Note_CLK_GEN2>.
+
+Elaborating module <GND>.
+
+Elaborating module <OR2>.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 317: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\user\Dropbox\School\EE-201L intro to digital circuits\Drum_machine2\drum_Machine\drum_machine_top.v" Line 319: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <drum_machine_top>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v".
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 157: Output port <DPB> of the instance <ee201_debouncer_BtnC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 157: Output port <MCEN> of the instance <ee201_debouncer_BtnC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 157: Output port <CCEN> of the instance <ee201_debouncer_BtnC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 161: Output port <DPB> of the instance <ee201_debouncer_Btn0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 161: Output port <MCEN> of the instance <ee201_debouncer_Btn0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 161: Output port <CCEN> of the instance <ee201_debouncer_Btn0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 165: Output port <DPB> of the instance <ee201_debouncer_Btn1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 165: Output port <MCEN> of the instance <ee201_debouncer_Btn1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 165: Output port <CCEN> of the instance <ee201_debouncer_Btn1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 169: Output port <DPB> of the instance <ee201_debouncer_BtnU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 169: Output port <MCEN> of the instance <ee201_debouncer_BtnU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_top.v" line 169: Output port <CCEN> of the instance <ee201_debouncer_BtnU> is unconnected or connected to loadless signal.
+    Found 27-bit register for signal <DIV_CLK>.
+    Found 2-bit register for signal <tempo>.
+    Found 1-bit register for signal <Note_Toggle_Flag>.
+    Found 27-bit adder for signal <DIV_CLK[26]_GND_1_o_add_2_OUT> created at line 138.
+    Found 2-bit adder for signal <tempo[1]_GND_1_o_add_21_OUT> created at line 319.
+    Found 2-bit subtractor for signal <GND_1_o_GND_1_o_sub_20_OUT<1:0>> created at line 317.
+    Found 1-bit 3-to-1 multiplexer for signal <SSD<1>> created at line 283.
+    Found 1-bit 3-to-1 multiplexer for signal <SSD<0>> created at line 283.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred  15 Multiplexer(s).
+Unit <drum_machine_top> synthesized.
+
+Synthesizing Unit <ee201_debouncer>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/ee201_debounce_dpb_scen_ccen_mcen_r1.v".
+        N_dc = 28
+    Set property "fsm_encoding = user" for signal <state>.
+    Found 6-bit register for signal <state>.
+    Found 28-bit register for signal <debounce_count>.
+    Found 4-bit register for signal <MCEN_count>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 13                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000000                                         |
+    | Encoding           | user                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 28-bit adder for signal <debounce_count[27]_GND_3_o_add_2_OUT> created at line 160.
+    Found 4-bit adder for signal <MCEN_count[3]_GND_3_o_add_5_OUT> created at line 173.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <ee201_debouncer> synthesized.
+
+Synthesizing Unit <drum_machine_SM>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/drum_machine_sm.v".
+    Found 17-bit register for signal <state>.
+    Found 16-bit register for signal <A>.
+    Found 16-bit register for signal <B>.
+    Found 16-bit register for signal <C>.
+    Found 16-bit register for signal <D>.
+    Found 16-bit register for signal <E>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 52                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 34                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000000000001                              |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  80 D-type flip-flop(s).
+	inferred 240 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <drum_machine_SM> synthesized.
+
+Synthesizing Unit <vga_demo>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/vga_demo.v".
+WARNING:Xst:647 - Input <ClkPort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <vga_g>.
+    Found 1-bit register for signal <vga_b>.
+    Found 1-bit register for signal <vga_r>.
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_3_o> created at line 88
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_4_o> created at line 88
+    Found 10-bit comparator greater for signal <GND_6_o_CounterY[9]_LessThan_5_o> created at line 88
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_6_o_LessThan_6_o> created at line 88
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_7_o> created at line 89
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_8_o> created at line 89
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_11_o> created at line 90
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_12_o> created at line 90
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_15_o> created at line 91
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_16_o> created at line 91
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_19_o> created at line 92
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_20_o> created at line 92
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_23_o> created at line 93
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_24_o> created at line 93
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_27_o> created at line 94
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_28_o> created at line 94
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_31_o> created at line 95
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_32_o> created at line 95
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_35_o> created at line 96
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_36_o> created at line 96
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_39_o> created at line 97
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_40_o> created at line 97
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_43_o> created at line 98
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_44_o> created at line 98
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_47_o> created at line 99
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_48_o> created at line 99
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_51_o> created at line 100
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_6_o_LessThan_52_o> created at line 100
+    Found 10-bit comparator greater for signal <GND_6_o_CounterX[9]_LessThan_55_o> created at line 101
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_5_o_LessThan_56_o> created at line 101
+    Found 10-bit comparator greater for signal <PWR_5_o_CounterX[9]_LessThan_59_o> created at line 102
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_5_o_LessThan_60_o> created at line 102
+    Found 10-bit comparator greater for signal <PWR_5_o_CounterX[9]_LessThan_63_o> created at line 103
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_5_o_LessThan_64_o> created at line 103
+    Found 10-bit comparator greater for signal <GND_6_o_CounterY[9]_LessThan_69_o> created at line 106
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_6_o_LessThan_70_o> created at line 106
+    Found 10-bit comparator greater for signal <GND_6_o_CounterY[9]_LessThan_133_o> created at line 124
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_6_o_LessThan_134_o> created at line 124
+    Found 10-bit comparator greater for signal <GND_6_o_CounterY[9]_LessThan_197_o> created at line 142
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_6_o_LessThan_198_o> created at line 142
+    Found 10-bit comparator greater for signal <GND_6_o_CounterY[9]_LessThan_261_o> created at line 160
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_6_o_LessThan_262_o> created at line 160
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred  42 Comparator(s).
+Unit <vga_demo> synthesized.
+
+Synthesizing Unit <hvsync_generator>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/hvsync_generator.v".
+    Found 10-bit register for signal <CounterY>.
+    Found 1-bit register for signal <vga_HS>.
+    Found 1-bit register for signal <vga_VS>.
+    Found 1-bit register for signal <inDisplayArea>.
+    Found 10-bit register for signal <CounterX>.
+    Found 10-bit adder for signal <CounterX[9]_GND_7_o_add_2_OUT> created at line 34.
+    Found 10-bit adder for signal <CounterY[9]_GND_7_o_add_9_OUT> created at line 44.
+    Found 10-bit comparator greater for signal <PWR_6_o_CounterX[9]_LessThan_16_o> created at line 49
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_6_o_LessThan_17_o> created at line 49
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_6_o_LessThan_21_o> created at line 58
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_7_o_LessThan_22_o> created at line 58
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <hvsync_generator> synthesized.
+
+Synthesizing Unit <Note_CLK_GEN2>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf".
+    Set property "HU_SET = XLXI_2_0" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_4_1" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_10_2" for instance <XLXI_10>.
+    Set property "HU_SET = XLXI_12_3" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_4" for instance <XLXI_13>.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf" line 132: Output port <CEO> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf" line 132: Output port <TC> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf" line 147: Output port <CEO> of the instance <XLXI_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf" line 147: Output port <TC> of the instance <XLXI_12> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Note_CLK_GEN2> synthesized.
+
+Synthesizing Unit <Note64X16ROM>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note64x16rom.v".
+    Found 64x16-bit Read Only RAM for signal <DOUT>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Note64X16ROM> synthesized.
+
+Synthesizing Unit <COMP16_HXILINX_Note_CLK_GEN2>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf".
+    Found 16-bit comparator equal for signal <EQ> created at line 96
+    Summary:
+	inferred   1 Comparator(s).
+Unit <COMP16_HXILINX_Note_CLK_GEN2> synthesized.
+
+Synthesizing Unit <CB16CE_HXILINX_Note_CLK_GEN2>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf".
+        TERMINAL_COUNT = 16'b1111111111111111
+    Found 16-bit register for signal <Q>.
+    Found 16-bit adder for signal <Q[15]_GND_11_o_add_0_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <CB16CE_HXILINX_Note_CLK_GEN2> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_Note_CLK_GEN2>.
+    Related source file is "c:/users/user/dropbox/school/ee-201l intro to digital circuits/drum_machine2/drum_machine/note_clk_gen2.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_Note_CLK_GEN2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x16-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 2
+ 16-bit adder                                          : 2
+ 2-bit addsub                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 4
+ 4-bit adder                                           : 4
+# Registers                                            : 27
+ 1-bit register                                        : 8
+ 10-bit register                                       : 2
+ 16-bit register                                       : 7
+ 2-bit register                                        : 1
+ 27-bit register                                       : 1
+ 28-bit register                                       : 4
+ 4-bit register                                        : 4
+# Comparators                                          : 48
+ 10-bit comparator greater                             : 46
+ 16-bit comparator equal                               : 2
+# Multiplexers                                         : 259
+ 1-bit 2-to-1 multiplexer                              : 255
+ 1-bit 3-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CB16CE_HXILINX_Note_CLK_GEN2>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+Unit <CB16CE_HXILINX_Note_CLK_GEN2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Note64X16ROM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_DOUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <I>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <DOUT>          |          |
+    -----------------------------------------------------------------------
+Unit <Note64X16ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <drum_machine_top>.
+The following registers are absorbed into counter <tempo>: 1 register on signal <tempo>.
+The following registers are absorbed into counter <DIV_CLK>: 1 register on signal <DIV_CLK>.
+Unit <drum_machine_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hvsync_generator>.
+The following registers are absorbed into counter <CounterX>: 1 register on signal <CounterX>.
+The following registers are absorbed into counter <CounterY>: 1 register on signal <CounterY>.
+Unit <hvsync_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x16-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 8
+ 28-bit adder                                          : 4
+ 4-bit adder                                           : 4
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 16-bit up counter                                     : 2
+ 2-bit updown counter                                  : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 216
+ Flip-Flops                                            : 216
+# Comparators                                          : 48
+ 10-bit comparator greater                             : 46
+ 16-bit comparator equal                               : 2
+# Multiplexers                                         : 258
+ 1-bit 2-to-1 multiplexer                              : 255
+ 1-bit 3-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Optimizing FSM <ee201_debouncer_Btn1/FSM_0> on signal <state[1:6]> with user encoding.
+Optimizing FSM <ee201_debouncer_Btn0/FSM_0> on signal <state[1:6]> with user encoding.
+Optimizing FSM <ee201_debouncer_BtnC/FSM_0> on signal <state[1:6]> with user encoding.
+Optimizing FSM <ee201_debouncer_BtnU/FSM_0> on signal <state[1:6]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 000000
+ 000001 | 000001
+ 111100 | 111100
+ 100000 | 100000
+ 101100 | 101100
+ 100100 | 100100
+ 101101 | 101101
+ 100001 | 100001
+ 100010 | 100010
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <drum_machine_SM_1/FSM_1> on signal <state[1:17]> with user encoding.
+----------------------------------------
+ State             | Encoding
+----------------------------------------
+ 00000000000000001 | 00000000000000001
+ 00000000000000010 | 00000000000000010
+ 00000000000000100 | 00000000000000100
+ 00000000000001000 | 00000000000001000
+ 00000000000010000 | 00000000000010000
+ 00000000000100000 | 00000000000100000
+ 00000000001000000 | 00000000001000000
+ 00000000010000000 | 00000000010000000
+ 00000000100000000 | 00000000100000000
+ 00000001000000000 | 00000001000000000
+ 00000010000000000 | 00000010000000000
+ 00000100000000000 | 00000100000000000
+ 00001000000000000 | 00001000000000000
+ 00010000000000000 | 00010000000000000
+ 00100000000000000 | 00100000000000000
+ 01000000000000000 | 01000000000000000
+ 10000000000000000 | 10000000000000000
+----------------------------------------
+WARNING:Xst:2677 - Node <DIV_CLK_26> of sequential type is unconnected in block <drum_machine_top>.
+
+Optimizing unit <COMP16_HXILINX_Note_CLK_GEN2> ...
+
+Optimizing unit <drum_machine_top> ...
+
+Optimizing unit <ee201_debouncer> ...
+
+Optimizing unit <drum_machine_SM> ...
+
+Optimizing unit <vga_demo> ...
+
+Optimizing unit <hvsync_generator> ...
+
+Optimizing unit <CB16CE_HXILINX_Note_CLK_GEN2> ...
+
+Optimizing unit <FJKC_HXILINX_Note_CLK_GEN2> ...
+WARNING:Xst:2016 - Found a loop when searching source clock on port 'Mmux_sys_clk1:Mmux_sys_clk1'
+Last warning will be issued only once.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block drum_machine_top, actual ratio is 12.
+FlipFlop vga_demo1/syncgen/CounterX_1 has been replicated 4 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_2 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_3 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_4 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_5 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_6 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_7 has been replicated 4 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_8 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterX_9 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_3 has been replicated 1 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_4 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_5 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_6 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_7 has been replicated 3 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_8 has been replicated 2 time(s)
+FlipFlop vga_demo1/syncgen/CounterY_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 378
+ Flip-Flops                                            : 378
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : drum_machine_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1379
+#      GND                         : 5
+#      INV                         : 13
+#      LUT1                        : 179
+#      LUT2                        : 44
+#      LUT3                        : 39
+#      LUT4                        : 158
+#      LUT5                        : 204
+#      LUT6                        : 346
+#      MUXCY                       : 193
+#      MUXF7                       : 2
+#      OR2                         : 1
+#      VCC                         : 5
+#      XORCY                       : 190
+# FlipFlops/Latches                : 378
+#      FD                          : 132
+#      FDC                         : 67
+#      FDCE                        : 33
+#      FDE                         : 80
+#      FDP                         : 1
+#      FDPE                        : 1
+#      FDR                         : 40
+#      FDRE                        : 24
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 53
+#      IBUF                        : 15
+#      OBUF                        : 38
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             378  out of  18224     2%  
+ Number of Slice LUTs:                  983  out of   9112    10%  
+    Number used as Logic:               983  out of   9112    10%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1021
+   Number with an unused Flip Flop:     643  out of   1021    62%  
+   Number with an unused LUT:            38  out of   1021     3%  
+   Number of fully used LUT-FF pairs:   340  out of   1021    33%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          54
+ Number of bonded IOBs:                  54  out of    232    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------+------------------------------------------+-------+
+Clock Signal                                  | Clock buffer(FF name)                    | Load  |
+----------------------------------------------+------------------------------------------+-------+
+ClkPort                                       | BUFGP                                    | 181   |
+sys_clk(Mmux_sys_clk11:O)                     | BUFG(*)(drum_machine_SM_1/state_FSM_FFd1)| 97    |
+DIV_CLK_1                                     | BUFG                                     | 67    |
+DIV_CLK_0                                     | NONE(UUT/XLXI_12/Q_0)                    | 16    |
+UUT/XLXI_13/EQ(UUT/XLXI_13/Mcompar_EQ_cy<5>:O)| NONE(*)(UUT/XLXI_4/Q_0)                  | 16    |
+UUT/XLXI_2/EQ(UUT/XLXI_2/Mcompar_EQ_cy<5>:O)  | NONE(*)(UUT/XLXI_10/Q)                   | 1     |
+----------------------------------------------+------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.764ns (Maximum Frequency: 128.793MHz)
+   Minimum input arrival time before clock: 5.021ns
+   Maximum output required time after clock: 9.162ns
+   Maximum combinational path delay: 6.552ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ClkPort'
+  Clock period: 4.016ns (frequency: 249.017MHz)
+  Total number of paths / destination ports: 3259 / 184
+-------------------------------------------------------------------------
+Delay:               4.016ns (Levels of Logic = 2)
+  Source:            ee201_debouncer_BtnU/state_FSM_FFd4 (FF)
+  Destination:       ee201_debouncer_BtnU/debounce_count_27 (FF)
+  Source Clock:      ClkPort rising
+  Destination Clock: ClkPort rising
+
+  Data Path: ee201_debouncer_BtnU/state_FSM_FFd4 to ee201_debouncer_BtnU/debounce_count_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             38   0.447   1.721  ee201_debouncer_BtnU/state_FSM_FFd4 (ee201_debouncer_BtnU/state_FSM_FFd4)
+     LUT5:I0->O           28   0.203   1.339  ee201_debouncer_BtnU/_n00641 (ee201_debouncer_BtnU/_n0064)
+     LUT5:I3->O            1   0.203   0.000  ee201_debouncer_BtnU/state[5]_GND_3_o_select_29_OUT<9>1 (ee201_debouncer_BtnU/state[5]_GND_3_o_select_29_OUT<9>)
+     FD:D                      0.102          ee201_debouncer_BtnU/debounce_count_9
+    ----------------------------------------
+    Total                      4.016ns (0.955ns logic, 3.061ns route)
+                                       (23.8% logic, 76.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 6.092ns (frequency: 164.156MHz)
+  Total number of paths / destination ports: 1397 / 97
+-------------------------------------------------------------------------
+Delay:               6.092ns (Levels of Logic = 5)
+  Source:            drum_machine_SM_1/state_FSM_FFd7 (FF)
+  Destination:       drum_machine_SM_1/E_15 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: drum_machine_SM_1/state_FSM_FFd7 to drum_machine_SM_1/E_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             27   0.447   1.449  drum_machine_SM_1/state_FSM_FFd7 (drum_machine_SM_1/state_FSM_FFd7)
+     LUT3:I0->O            1   0.205   0.580  drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<13>1111_SW0 (N0)
+     LUT6:I5->O            2   0.205   0.845  drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<13>1111 (drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<13>1111)
+     LUT5:I2->O            4   0.205   0.931  drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<2>1111 (drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<2>111)
+     LUT4:I0->O            5   0.203   0.715  drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<5>11 (drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<5>1)
+     LUT4:I3->O            1   0.205   0.000  drum_machine_SM_1/state_state[16]_GND_4_o_select_38_OUT<5>1 (drum_machine_SM_1/state[16]_GND_4_o_select_38_OUT<5>)
+     FDE:D                     0.102          drum_machine_SM_1/A_5
+    ----------------------------------------
+    Total                      6.092ns (1.572ns logic, 4.520ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
+  Clock period: 7.764ns (frequency: 128.793MHz)
+  Total number of paths / destination ports: 10643 / 154
+-------------------------------------------------------------------------
+Delay:               7.764ns (Levels of Logic = 7)
+  Source:            vga_demo1/syncgen/CounterY_1 (FF)
+  Destination:       vga_demo1/vga_g (FF)
+  Source Clock:      DIV_CLK_1 rising
+  Destination Clock: DIV_CLK_1 rising
+
+  Data Path: vga_demo1/syncgen/CounterY_1 to vga_demo1/vga_g
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.447   1.086  vga_demo1/syncgen/CounterY_1 (vga_demo1/syncgen/CounterY_1)
+     LUT2:I0->O            1   0.203   0.580  vga_demo1/CounterY[9]_GND_6_o_LessThan_6_o1_SW0 (N36)
+     LUT6:I5->O           21   0.205   1.114  vga_demo1/CounterY[9]_GND_6_o_LessThan_6_o1 (vga_demo1/CounterY[9]_GND_6_o_LessThan_6_o)
+     LUT2:I1->O           13   0.205   0.933  vga_demo1/SF111011 (vga_demo1/SF11101)
+     LUT6:I5->O            1   0.205   0.684  vga_demo1/G_inv64 (vga_demo1/G_inv65)
+     LUT6:I4->O            1   0.203   0.580  vga_demo1/G_inv65 (vga_demo1/G_inv66)
+     LUT6:I5->O            1   0.205   0.808  vga_demo1/G_inv66 (vga_demo1/G_inv67)
+     LUT4:I1->O            1   0.205   0.000  vga_demo1/vga_g_rstpot (vga_demo1/vga_g_rstpot)
+     FD:D                      0.102          vga_demo1/vga_g
+    ----------------------------------------
+    Total                      7.764ns (1.980ns logic, 5.784ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_0'
+  Clock period: 3.858ns (frequency: 259.172MHz)
+  Total number of paths / destination ports: 392 / 32
+-------------------------------------------------------------------------
+Delay:               3.858ns (Levels of Logic = 9)
+  Source:            UUT/XLXI_12/Q_0 (FF)
+  Destination:       UUT/XLXI_12/Q_0 (FF)
+  Source Clock:      DIV_CLK_0 rising
+  Destination Clock: DIV_CLK_0 rising
+
+  Data Path: UUT/XLXI_12/Q_0 to UUT/XLXI_12/Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.981  Q_0 (Q_0)
+     end scope: 'UUT/XLXI_12:Q<0>'
+     begin scope: 'UUT/XLXI_13:A<0>'
+     LUT6:I0->O            1   0.203   0.000  Mcompar_EQ_lut<0> (Mcompar_EQ_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_EQ_cy<0> (Mcompar_EQ_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<1> (Mcompar_EQ_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<2> (Mcompar_EQ_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<3> (Mcompar_EQ_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<4> (Mcompar_EQ_cy<4>)
+     MUXCY:CI->O          32   0.258   1.291  Mcompar_EQ_cy<5> (EQ)
+     end scope: 'UUT/XLXI_13:EQ'
+     begin scope: 'UUT/XLXI_12:CLR'
+     FDCE:CLR                  0.430          Q_0
+    ----------------------------------------
+    Total                      3.858ns (1.586ns logic, 2.272ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UUT/XLXI_13/EQ'
+  Clock period: 4.755ns (frequency: 210.289MHz)
+  Total number of paths / destination ports: 392 / 32
+-------------------------------------------------------------------------
+Delay:               4.755ns (Levels of Logic = 10)
+  Source:            UUT/XLXI_4/Q_0 (FF)
+  Destination:       UUT/XLXI_4/Q_0 (FF)
+  Source Clock:      UUT/XLXI_13/EQ rising
+  Destination Clock: UUT/XLXI_13/EQ rising
+
+  Data Path: UUT/XLXI_4/Q_0 to UUT/XLXI_4/Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.981  Q_0 (Q_0)
+     end scope: 'UUT/XLXI_4:Q<0>'
+     begin scope: 'UUT/XLXI_2:A<0>'
+     LUT6:I0->O            1   0.203   0.000  Mcompar_EQ_lut<0> (Mcompar_EQ_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_EQ_cy<0> (Mcompar_EQ_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<1> (Mcompar_EQ_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<2> (Mcompar_EQ_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<3> (Mcompar_EQ_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_EQ_cy<4> (Mcompar_EQ_cy<4>)
+     MUXCY:CI->O           2   0.258   0.981  Mcompar_EQ_cy<5> (EQ)
+     end scope: 'UUT/XLXI_2:EQ'
+     OR2:I0->O            16   0.203   1.004  UUT/XLXI_18 (UUT/XLXN_38)
+     begin scope: 'UUT/XLXI_4:CLR'
+     FDCE:CLR                  0.430          Q_0
+    ----------------------------------------
+    Total                      4.755ns (1.789ns logic, 2.966ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UUT/XLXI_2/EQ'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            UUT/XLXI_10/Q (FF)
+  Destination:       UUT/XLXI_10/Q (FF)
+  Source Clock:      UUT/XLXI_2/EQ rising
+  Destination Clock: UUT/XLXI_2/EQ rising
+
+  Data Path: UUT/XLXI_10/Q to UUT/XLXI_10/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  Q (Q)
+     INV:I->O              1   0.206   0.579  Mmux_Q_Q_MUX_373_o11_INV_0 (Q_Q_MUX_373_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
+  Total number of paths / destination ports: 80 / 76
+-------------------------------------------------------------------------
+Offset:              3.678ns (Levels of Logic = 3)
+  Source:            BtnU (PAD)
+  Destination:       ee201_debouncer_BtnU/state_FSM_FFd6 (FF)
+  Destination Clock: ClkPort rising
+
+  Data Path: BtnU to ee201_debouncer_BtnU/state_FSM_FFd6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.138  BtnU_IBUF (BtnU_IBUF)
+     LUT6:I0->O            1   0.203   0.808  ee201_debouncer_BtnU/state_FSM_FFd6-In2 (ee201_debouncer_BtnU/state_FSM_FFd6-In2)
+     LUT5:I2->O            1   0.205   0.000  ee201_debouncer_BtnU/state_FSM_FFd6-In3 (ee201_debouncer_BtnU/state_FSM_FFd6-In)
+     FDC:D                     0.102          ee201_debouncer_BtnU/state_FSM_FFd6
+    ----------------------------------------
+    Total                      3.678ns (1.732ns logic, 1.946ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 216 / 194
+-------------------------------------------------------------------------
+Offset:              3.926ns (Levels of Logic = 3)
+  Source:            BtnD (PAD)
+  Destination:       drum_machine_SM_1/state_FSM_FFd16 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: BtnD to drum_machine_SM_1/state_FSM_FFd16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.222   1.369  BtnD_IBUF (BtnD_IBUF)
+     LUT6:I0->O            1   0.203   0.827  drum_machine_SM_1/state_FSM_FFd16-In1 (drum_machine_SM_1/state_FSM_FFd16-In1)
+     LUT5:I1->O            1   0.203   0.000  drum_machine_SM_1/state_FSM_FFd16-In2 (drum_machine_SM_1/state_FSM_FFd16-In)
+     FDC:D                     0.102          drum_machine_SM_1/state_FSM_FFd16
+    ----------------------------------------
+    Total                      3.926ns (1.730ns logic, 2.196ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_1'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              5.021ns (Levels of Logic = 2)
+  Source:            BtnL (PAD)
+  Destination:       vga_demo1/syncgen/CounterX_0 (FF)
+  Destination Clock: DIV_CLK_1 rising
+
+  Data Path: BtnL to vga_demo1/syncgen/CounterX_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   1.222   1.804  BtnL_IBUF (BtnL_IBUF)
+     LUT2:I0->O           37   0.203   1.362  vga_demo1/syncgen/Mcount_CounterX_val1 (vga_demo1/syncgen/Mcount_CounterX_val)
+     FDR:R                     0.430          vga_demo1/syncgen/CounterX_0
+    ----------------------------------------
+    Total                      5.021ns (1.855ns logic, 3.166ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UUT/XLXI_2/EQ'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.351ns (Levels of Logic = 2)
+  Source:            BtnL (PAD)
+  Destination:       UUT/XLXI_10/Q (FF)
+  Destination Clock: UUT/XLXI_2/EQ rising
+
+  Data Path: BtnL to UUT/XLXI_10/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   1.222   1.699  BtnL_IBUF (BtnL_IBUF)
+     begin scope: 'UUT/XLXI_10:CLR'
+     FDC:CLR                   0.430          Q
+    ----------------------------------------
+    Total                      3.351ns (1.652ns logic, 1.699ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 1464 / 14
+-------------------------------------------------------------------------
+Offset:              9.162ns (Levels of Logic = 5)
+  Source:            drum_machine_SM_1/state_FSM_FFd13 (FF)
+  Destination:       Ca (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: drum_machine_SM_1/state_FSM_FFd13 to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             31   0.447   1.642  drum_machine_SM_1/state_FSM_FFd13 (drum_machine_SM_1/state_FSM_FFd13)
+     LUT6:I0->O            1   0.203   0.944  drum_machine_SM_1/state_Dout1 (drum_machine_SM_1/state_Dout)
+     LUT6:I0->O           20   0.203   1.340  drum_machine_SM_1/state_Dout7 (Dout)
+     LUT4:I0->O            1   0.203   0.827  Mmux_n008431 (Mmux_n00843)
+     LUT6:I2->O            1   0.203   0.579  Mmux_n008432 (Cc_OBUF)
+     OBUF:I->O                 2.571          Cc_OBUF (Cc)
+    ----------------------------------------
+    Total                      9.162ns (3.830ns logic, 5.332ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
+  Total number of paths / destination ports: 27 / 11
+-------------------------------------------------------------------------
+Offset:              5.960ns (Levels of Logic = 3)
+  Source:            DIV_CLK_18 (FF)
+  Destination:       Cb (PAD)
+  Source Clock:      ClkPort rising
+
+  Data Path: DIV_CLK_18 to Cb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.273  DIV_CLK_18 (DIV_CLK_18)
+     LUT6:I0->O            1   0.203   0.684  Mmux_n008421 (Mmux_n00842)
+     LUT2:I0->O            1   0.203   0.579  Mmux_n008422 (Cb_OBUF)
+     OBUF:I->O                 2.571          Cb_OBUF (Cb)
+    ----------------------------------------
+    Total                      5.960ns (3.424ns logic, 2.536ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            vga_demo1/syncgen/vga_HS (FF)
+  Destination:       vga_h_sync (PAD)
+  Source Clock:      DIV_CLK_1 rising
+
+  Data Path: vga_demo1/syncgen/vga_HS to vga_h_sync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  vga_demo1/syncgen/vga_HS (vga_demo1/syncgen/vga_HS)
+     INV:I->O              1   0.206   0.579  vga_demo1/syncgen/vga_h_sync1_INV_0 (vga_h_sync_OBUF)
+     OBUF:I->O                 2.571          vga_h_sync_OBUF (vga_h_sync)
+    ----------------------------------------
+    Total                      4.382ns (3.224ns logic, 1.158ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UUT/XLXI_2/EQ'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.781ns (Levels of Logic = 3)
+  Source:            UUT/XLXI_10/Q (FF)
+  Destination:       SOUND_data (PAD)
+  Source Clock:      UUT/XLXI_2/EQ rising
+
+  Data Path: UUT/XLXI_10/Q to SOUND_data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  Q (Q)
+     end scope: 'UUT/XLXI_10:Q'
+     LUT6:I0->O            1   0.203   0.579  SOUND_data1 (SOUND_data_OBUF)
+     OBUF:I->O                 2.571          SOUND_data_OBUF (SOUND_data)
+    ----------------------------------------
+    Total                      4.781ns (3.221ns logic, 1.560ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 7
+-------------------------------------------------------------------------
+Delay:               6.552ns (Levels of Logic = 3)
+  Source:            Sw2 (PAD)
+  Destination:       Ld6 (PAD)
+
+  Data Path: Sw2 to Ld6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.871  Sw2_IBUF (Sw2_IBUF)
+     LUT2:I1->O            4   0.205   0.683  Ld61 (Ld3_OBUF)
+     OBUF:I->O                 2.571          Ld6_OBUF (Ld6)
+    ----------------------------------------
+    Total                      6.552ns (3.998ns logic, 2.554ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ClkPort
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkPort        |    4.016|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_0      |    3.858|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_1      |    7.764|         |         |         |
+sys_clk        |    7.726|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UUT/XLXI_13/EQ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkPort        |    6.235|         |         |         |
+UUT/XLXI_13/EQ |    4.755|         |         |         |
+sys_clk        |    9.419|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UUT/XLXI_2/EQ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+UUT/XLXI_2/EQ  |    1.950|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |    6.092|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.56 secs
+ 
+--> 
+
+Total memory usage is 250780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

@@ -1,0 +1,46 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {drum_machine_SM_TB2.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module drum_machine_SM
+# 
+# Top level modules:
+# 	drum_machine_SM
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module drum_machine_SM_TB2
+# 
+# Top level modules:
+# 	drum_machine_SM_TB2
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.drum_machine_SM_TB2 glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: drum_machine_SM_TB2.v(79): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 24, found 23.
+# 
+# ** Warning: drum_machine_SM_TB2.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'CCEN'.
+# 
+# Loading work.drum_machine_SM_TB2(fast)
+# Loading work.drum_machine_SM(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) drum_machine_SM_TB2.v(79): [TFMPC] - Too few port connections. Expected 24, found 23.
+# 
+#         Region: /drum_machine_SM_TB2/uut
+# ** Warning: (vsim-3722) drum_machine_SM_TB2.v(79): [TFMPC] - Missing connection for port 'CCEN'.
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
